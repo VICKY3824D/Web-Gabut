@@ -1,0 +1,31 @@
+header{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.d-flex{
+    background-color: beige;
+}
+
+#welcome{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sambutan{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.btn{
+    border-width: 3px;
+    border-color: black;
+    border-style: dotted;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
