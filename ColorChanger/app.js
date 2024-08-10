@@ -32,4 +32,6 @@ blue.addEventListener("click", () => {
 
 document.querySelector('#reset').addEventListener("click", () => {
     document.body.style.backgroundColor = 'white';
+    const list = document.querySelector('.par');
+    list.removeChild(list.firstElementChild);
 });
