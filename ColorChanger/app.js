@@ -1,12 +1,14 @@
 const merah = document.querySelector('#red');
 const hijau = document.querySelector('#green');
 const blue = document.querySelector('#blue');
+const reset = document.querySelector('#reset');
 
 
 const par = document.querySelector('.par');
 
 merah.addEventListener("click", () => {
     
+    document.querySelectorAll('p').forEach((p) => p.remove());
     document.body.style.backgroundColor = 'rgb(206, 43, 43)';
     const menyala = document.createElement('p');
     menyala.textContent = 'Warna Merah Warna Cinta :)';
@@ -15,6 +17,7 @@ merah.addEventListener("click", () => {
 });
 
 hijau.addEventListener("click", () => {
+    document.querySelectorAll('p').forEach((p) => p.remove());
     document.body.style.backgroundColor = 'rgb(37, 207, 80)';
     const goGreen = document.createElement('p');
     goGreen.textContent = 'Mari Hijaukan Bumi Kita';
@@ -23,6 +26,7 @@ hijau.addEventListener("click", () => {
 });
 
 blue.addEventListener("click", () => {
+    document.querySelectorAll('p').forEach((p) => p.remove());
     document.body.style.backgroundColor = 'rgb(37, 40, 207)';
     const laut = document.createElement('p');
     laut.textContent = 'Laut dan awan warnanya biru';
@@ -31,7 +35,6 @@ blue.addEventListener("click", () => {
 });
 
 document.querySelector('#reset').addEventListener("click", () => {
-    document.body.style.backgroundColor = 'white';
-    const list = document.querySelector('.par');
-    list.removeChild(list.firstElementChild);
+    //menghapus elemen paragraf yang berisi teks
+    document.querySelectorAll('p').forEach((p) => p.remove());
 });
