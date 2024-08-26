@@ -3,7 +3,6 @@ const hijau = document.querySelector('#green');
 const blue = document.querySelector('#blue');
 const reset = document.querySelector('#reset');
 
-
 const par = document.querySelector('.par');
 
 merah.addEventListener("click", () => {
@@ -37,4 +36,5 @@ blue.addEventListener("click", () => {
 document.querySelector('#reset').addEventListener("click", () => {
     //menghapus elemen paragraf yang berisi teks
     document.querySelectorAll('p').forEach((p) => p.remove());
+    document.body.style.backgroundColor = 'white';
 });
